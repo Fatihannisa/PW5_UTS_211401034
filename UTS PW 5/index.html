@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--link ini menyambungkan file html dengan file css nya-->
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link ini menyambungkan html dengan bootstrap versi 4.6.2-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!--link ini menyambungkan html dengan bootstrap versi 4.2.0-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!--link ini menyambungkan html dengan bootstrap versi 4.1.0-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    <!--link ini untuk mengambil font tulisan dari google-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+<!--judul dari website-->
+  <title>UTS Pemrograman Website Lab 5</title>
+
+</head>
+
+<body>
+
+  <!--div ini memuat navbar mulai dari logo sampai form pencarian-->
+    <div class="navbar">
+      <img src="logobulat.png" alt="" width="60px" style="margin-left: 60px">
+        <ul style="margin-top: 10px ; margin-right: 300px">
+            <li><a href="#kontenutama">Home</a></li>
+            <li><a href="https://gudanglagu123.metrolagu.site/">Download</a></li>
+            <li><a href="profil.html">Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <!--form ini untuk membuat form pencarian dan button-->
+        <form id="header-search" class="form-inline mr-3" action="/redirect.php" style="font-family: Consolas ;"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="header-search-btn-submit" class="form-control mr-sm-2 px-0 ui-autocomplete-input" aria-label="Search" type="search" name="q" value="" autocomplete="off" placeholder="Find your favorit..."><button id="header-search-btn-submit" type="submit">CARI</button>
+          <ul id="header-search-suggest"></ul>
+        </form>
+    </div>
+
+    <!--div ini untuk memuat seluruh konten utama dari jam berjalan sampai bagian contact-->
+    <div class="kontenutama">
+
+      <!--div ini memuat jam berjalan yang telah di atur di javascript-->
+      <div style="margin-left: 47%; margin-top: 5px;">
+        <span id="date_time"></span>
+    </div>
+
+    <!--div ini memuat tulisan bergerak dari bawah ke atas dengan waktu dan tulisan bisa diberhentikan saat kursor mouse berada di atas tulisannya-->
+      <div class="title">
+        <marquee behavior="scroll" direction="up" height="50" scrollamount="2.7" onmouseover="this.stop()" onmouseout="this.start()">
+            <br>
+            <h2> Enjoy your day with Music</h2>
+        </marquee>
+      </div>
+    <br>
+    
+    <!--row dan card ini untuk membuat 4 card gambar(dengan 2 kolom dan 2 baris yang diisi dengan video yang bisa dilihat dengan cara di play terlebih dahulu)-->
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-2">
+        <div class="card">
+          <a href="#">
+          <video controls><source src="y2mate.com - Ziva Magnolya  Peri Cintaku Official Lyric Video_360p.mp4" class="card-img-top" alt="..." width="400px" height="300px">
+          </video>
+        </a>
+          <div class="card-body">
+          <h3 class="card-title">Peri Cintaku</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-2">
+      <div class="card">
+        <a href="#music">
+        <video controls><source src="y2mate.com - Rossa  Sekali Ini Saja Official Music Video_480p.mp4" class="card-img-top" alt="...">
+        </video>
+      </a>
+        <div class="card-body">
+          <h3 class="card-title">Sekali Ini Saja</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-2">
+        <div class="card">
+          <a href="#">
+          <video controls><source src="y2mate.com - Glenn Fredly  Akhir Cerita Cinta Video Clip_360p.mp4" class="card-img-top" alt="...">
+          </video>
+        </a>
+          <div class="card-body">
+          <h3 class="card-title"> Akhir Cerita Cinta</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-2">
+      <div class="card">
+        <a href="#music">
+        <video controls><source src="y2mate.com - Glenn Fredly  Sedih Tak Berujung Video Clip_360p.mp4" class="card-img-top" alt="...">
+        </video>
+      </a>
+        <div class="card-body">
+          <h3 class="card-title">Sedih yang Tak Berujung</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--div ini memuat sedikit quotes mengenai hal yg sedang dibahas beserta dengan block quote nya-->
+    <div class="isi">
+        <table>
+          <tr>
+            <td>
+                <h2 style="font-family: Candara;"><b><i><u>  Top Chart Billboard  </u></i></b></h2>
+                <blockquote class="blockquote">
+                  <p class="mb-0" style="font-family: Calisto MT;">Hidup bukanlah sebuah pemutar musik di mana kamu memilih apa yang ingin dimainkan, hidup adalah sebuah radio di mana kamu harus menikmati apa yang dimainkan.</p>
+                  <footer class="blockquote-footer" style="font-family: Candara;">Zayn Malik</footer>
+                </blockquote>
+                <br>
+            </div>
+
+            <!--carousel ini untuk menampilkan beberapa gambar dengan menggerakkan slide ke kiri-->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://pbs.twimg.com/media/FJZCG_JUUAg3MmP?format=png&name=900x900"  class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.allkpop.com/upload/2022/05/content/121200/1652371254-fsc6qznuyaakmd4.jpg"  class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://pbs.twimg.com/media/FPlyzrrXIAEtkhj.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://pbs.twimg.com/media/EWxulLPUEAA3jEn.jpg"  class="d-block w-100 h-100" alt="...">
+                  </div>
+              </div>
+
+              <!--button ini untuk menklik gambar bergerak dari gambar sebelum dan sesudah-->
+             <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
+        </td>
+      </tr> 
+    </table>
+  </div>  
+
+  <!--div ini untuk membuat kolom komentar-->
+      <div id="comment">
+          <p>Add comment here...</p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Comment" aria-describedby="button-addon2">
+            <div class="input-group-append">
+
+              <!--button ini untuk mensubmit komentar-->
+              <button class="btn btn-secondary" type="button" id="button-addon2">Submit</button>
+            </div>
+          </div>
+
+          <p>You can put your account too </p>
+
+          <!--form ini untuk membuat kolom username dan email pengguna-->
+          <form class="form-inline">
+            <label class="sr-only" for="inlineFormInputName2">Username</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Username">
+          
+            <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+              </div>
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Email">
+            </div>
+
+            <!--button ini untuk mensubmit username dan email-->
+            <button type="submit" class="btn btn-secondary mb-2">Submit</button>
+          </form>
+        </div>
+      </div>
+
+<!--div ini untuk membuat bagian tentang sosial media dan bisa mengarahkan sosial media ke link nya masing-masing-->
+<div id="contact">
+  <p style="text-align: center;">Contact Me :</p>
+  <div class="text-center center-block" style="float: center-block;" >
+    <a href="https://line.me"><i id="social" class="fa fa-line-square fa-3x"><img src="LINE_logo.svg.webp" width="50px"></i></a>
+    <a href="https://mail.google.com"><i id="social" class="fa fa-main-google-square fa-3x"><img src="Gmail_icon_(2020).svg.png" width="50px"></i></a>
+    <a href="https://www.facebook.com"><img src="Facebook_f_logo_(2021).svg.png" alt="" width="50px"> <i id="social" class="fa fa-facebook-square fa-3x"></i></a>
+  </div>
+  <br>
+</div>
+</div>
+
+<!--div ini untuk membuat footer-->
+    <div class="footer">
+      <br>
+        <p>Copyright @ 2022 | Create by Fatihannisa Listy Zulmi; 211401034</p>
+    </div>
+  
+</body>
+
+<!--script dibawah ini untuk menyambungkan html dengan javascript pada bagian jam berjalan -->
+<script type="text/javascript" src="time.js"></script>
+<script type="text/javascript">window.onload = date_time('date_time');</script>
+
+<!--script dibawah ini untuk menyambungkan html dengan jquery versi 3.5.1 -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+
+<!--script dibawah ini untuk menyambungkan html dengan script yang ada di bootstrap versi 4.6.2 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+<!--script dibawah ini untuk menyambungkan html dengan script yang ada di bootstrap versi 3.2.0 -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</html>

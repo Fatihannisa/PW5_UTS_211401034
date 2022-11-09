@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg image.png');
+}
+
+p {
+    font-family: 'Candara';
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(96, 157, 159);
+    overflow: hidden;
+    font-family: 'Maiandra GD', sans-serif;
+}
+
+.navbar ul {
+    float: left;
+    display: block;
+}
+
+.navbar ul li{
+    float: left;
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li:hover{
+    background-color: goldenrod;
+    transition-duration: 500ms;
+    border-style: hidden;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(2, 36, 22);
+    padding: 25px;
+}
+
+.navbar img{
+    float: left;
+}
+
+.navbar img:hover{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.kontenutama{
+    margin: 0 25px;
+}
+
+
+table {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 0;
+    padding: 50px;
+    display: block;
+    overflow: visible;
+    text-align: justify;
+    padding: 0 5%;
+    margin-bottom: 40px;
+    opacity: 100%;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    background-color: rgb(192, 209, 224);
+}
+
+.footer {
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(151, 158, 172);
+}
